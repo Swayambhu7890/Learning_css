@@ -1,0 +1,17 @@
+h3{
+    font-size: 80px;
+    color: goldenrod;
+    background-color: chartreuse;
+}
+
+h2{
+    font-size: 90px !important;
+    color: orangered !important;
+    background-color: lightskyblue !important;
+}
+
+p{
+    color: greenyellow;
+    background-color: blueviolet;
+}
+

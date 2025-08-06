@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id vs class</title>
+    <style>
+
+        .text_color{
+            color: blueviolet;
+        }
+        .text_color{
+            color: chocolate;
+        }
+        .text_size{
+            font-size: 50px;
+        }
+        .text_background{
+            background-color: aquamarine;
+        }
+        .text_center{
+            text-align: center;
+        }
+        #text_color{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!--we can use multiple class but not id-->
+    <h1 class="text_color text_size text_background"> Hello its Swayambhu</h1> 
+    <h1 class="text_color text_size text_background text_center">Pune</h1>
+    <!--only one for id-->
+    <h1 id="text_color">Hello Dhiraj</h1>
+</body> 
+</html>

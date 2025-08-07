@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>border properties</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>border properties</title>
+        <style>
         /* Border style=double,dashed,solid,dotted,outset,inset*/
         .border_property1{
             border: 6px double orange;     /*width=6px,border style=double*/
@@ -28,24 +28,63 @@
         .border_property6{
             border: 6px dotted greenyellow;
         }
+        .border_property7{
+            width: 500px;
+            border-radius: 40px;
+        }
+        .border_property8{    
+             width: 500px;
+               border: 6px dotted greenyellow;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 20px;
+        }
+        .border_property9{    
+             width: 500px;
+               border: 6px dashed greenyellow;
+               border-radius: 50px 40px 50px 40px;
+               border-color: blueviolet orangered blueviolet orangered;
+            }
+        
     </style>
-</head>
-<body>
-    <!--border property for text--> 
-    <p class="border_property1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti tenetur, laborum quod architecto doloribus quia atque! Alias reprehenderit cupiditate soluta voluptates et maiores eveniet? Alias accusantium culpa veritatis eaque?</p>
-    <!--border property for image-->
-    <img  class="border_property2"  src="images/law3.jpg"/>
+    </head>
+    <body>
+        <!--border property for text-->
+        <p class="border_property1">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Reprehenderit corrupti tenetur, laborum quod
+            architecto doloribus quia atque! Alias reprehenderit cupiditate
+            soluta voluptates et maiores eveniet? Alias accusantium culpa
+            veritatis eaque?</p>
+        <!--border property for image-->
+        <img class="border_property2" src="images/law3.jpg" />
 
-    <p class="border_property3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure aliquam labore nisi ab, eius, et at quae cupiditate beatae voluptas distinctio aperiam voluptate harum ratione, molestiae error dicta deserunt?</p>
+        <p class="border_property3">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repellendus iure aliquam labore nisi ab, eius, et
+            at quae cupiditate beatae voluptas distinctio aperiam voluptate
+            harum ratione, molestiae error dicta deserunt?</p>
 
-    <p class="border_property4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure aliquam labore nisi ab, eius, et at quae cupiditate beatae voluptas distinctio aperiam voluptate harum ratione, molestiae error dicta deserunt?</p>
+        <p class="border_property4">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repellendus iure aliquam labore nisi ab, eius, et
+            at quae cupiditate beatae voluptas distinctio aperiam voluptate
+            harum ratione, molestiae error dicta deserunt?</p>
 
-    <p class="border_property5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure aliquam labore nisi ab, eius, et at quae cupiditate beatae voluptas distinctio aperiam voluptate harum ratione, molestiae error dicta deserunt?</p>
+        <p class="border_property5">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repellendus iure aliquam labore nisi ab, eius, et
+            at quae cupiditate beatae voluptas distinctio aperiam voluptate
+            harum ratione, molestiae error dicta deserunt?</p>
 
-    <p class="border_property6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure aliquam labore nisi ab, eius, et at quae cupiditate beatae voluptas distinctio aperiam voluptate harum ratione, molestiae error dicta deserunt?</p>
+        <p class="border_property6">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repellendus iure aliquam labore nisi ab, eius, et
+            at quae cupiditate beatae voluptas distinctio aperiam voluptate
+            harum ratione, molestiae error dicta deserunt?</p>
 
+        <!--border radius-->
+        <img class="border_property7" src="images/law3.jpg" /> <br>
+        <!--border 4 properties: top left,top right,bottom right,bottom left-->
+        <img class="border_property8" src="images/law3.jpg" /> <br>
+        <!--combination of 4 above property-->
+        <img class="border_property9" src="images/law2.jpg" />
 
-
-
-</body>
+    </body>
 </html>

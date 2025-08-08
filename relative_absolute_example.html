@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative_absolute</title>
+    <style>
+        .hall{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color:red;
+            top: 40px;
+            left: 550px;
+        }
+        #tv{
+            position: absolute;
+            height: 30px;
+            width: 100px;
+            left: 150px;
+            top: 20px;
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        #sofa{
+            position: absolute;
+            height: 50px;
+            width: 200px;
+            left: 110px;
+            top: 100px;
+            background-color: rgb(16, 201, 140);
+            text-align: center;
+        }
+
+        #fridge{
+            position: absolute;
+            height: 120px;
+            width: 80px;
+            left: 30px;
+            top: 250px;
+            background-color: yellow;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hall">          <!--hall(relative) and hall is parent--> 
+    <div id="tv">TV</div> 
+    <div id="sofa">Sofa</div>              
+    <div id="fridge">fridge</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        h1:hover{
+            background-color: blueviolet;
+            font-size: 60px;
+            color: orange;
+        
+        }
+        input:focus{
+            background-color: aqua;
+            color: red;
+        }
+        a:visited{                                 /*a is anker tag*/
+            color: brown;
+        }
+        p::first-letter{
+            color: aquamarine;
+            font-size: 40px;
+        }
+        p::first-line{
+            color: blueviolet;
+        }
+        h2::selection{
+            color: chocolate;
+            background-color: blueviolet;
+        }
+        ::selection{
+            color: aquamarine;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <!--hover effect-->
+    <h1>Hello  its Swayambhu</h1>
+    <!--focus effect-->
+    <input type="text"  placeholder="Name">  <br> <br>
+    <!--visited effect-->
+    <a href="https://www.bing.com/ck/a?!&&p=882f1a489a36233eeeb777c8f377d2b46ce09fb22d7218b6a9c8d69dfd20db43JmltdHM9MTc1NDg3MDQwMA&ptn=3&ver=2&hsh=4&fclid=13e91a23-c28f-6fa8-0167-0fc3c39a6ee5&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3IucGhwLw&ntb=1">Click Here</a> 
+
+    <a href="https://www.bing.com/ck/a?!&&p=5eea778cfcc5fe511d9436d92d078484bea020b8b7c1bde832ec4eec7eb50801JmltdHM9MTc1NDg3MDQwMA&ptn=3&ver=2&hsh=4&fclid=13e91a23-c28f-6fa8-0167-0fc3c39a6ee5&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1">Click Here 2</a> 
+
+    <!--first letter (only first letter  is coloured)-->
+    <!--first line (only first line  is coloured)-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam perferendis error blanditiis, quis architecto dicta autem porro tenetur obcaecati fugiat, natus eum deserunt sequi eaque exercitationem minima eveniet expedita.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam perferendis error blanditiis, quis architecto dicta autem porro tenetur obcaecati fugiat, natus eum deserunt sequi eaque exercitationem minima eveniet expedita</p>
+
+<!--selection (if we select text the color and background is changed)-->
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eum tenetur, nulla non dolorem aliquid, officiis quaerat quibusdam iste consequuntur eius maiores blanditiis, vel amet est obcaecati aut fuga aspernatur!</h2>
+</body>
+</html>

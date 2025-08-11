@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex gallery</title>
+    <style>
+        .flex-items{
+            display: flex;
+            height: 200px;
+            width: 400px;
+            background-color: brown;
+            background-image: url(/images/law1.jpg); 
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 10px;
+
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <ul class="flex-container">
+        <li class="flex-items"></li>
+        <li class="flex-items"></li>
+        <li class="flex-items"></li>
+        <li class="flex-items"></li>
+        <li class="flex-items"></li>
+        <li class="flex-items"></li>
+        <li class="flex-items"></li>
+
+       
+    </ul>
+</body>
+</html>

@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transform Example</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flip Card Example</title>
 <style>
-    .container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 10px;
-            gap: 30px;
-        }
-        .box{
-            background-color: yellow;
-            border: 3px solid red;
-            height: 200px;
-            width: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            transition: transform 5s ease;
-        }
-    .box1:hover{
-            transform: skewX(180deg);
-    }
-     .box2:hover{
-            transform: skewX(180deg);
-    }
-     .box3:hover{
-            transform: skewX(180deg);
-    }
-     .box4:hover{
-            transform: skewX(180deg);
-    }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* for 3D depth */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* hide back side */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 3px solid aqua;
+}
+
+.flip-card-front {
+    background-color: yellow;
+}
+
+.flip-card-back {
+    background-color: orange;
+    transform: rotateY(180deg);
+}
 </style>
+</head>
 <body>
-    <div class="container">
-        <div class="box box1">Front 1:Hello</div>              
-        <div class="box box2">Front 2:Info</div> 
-        <div class="box box3">Front 3:Services</div>
-        <div class="box box4">Front 4:Contact</div> 
+
+<div class="container">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">Front 1: Hello</div>
+            <div class="flip-card-back">Back 1: Welcome</div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">Front 2: Info</div>
+            <div class="flip-card-back">Back 2: More Info</div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">Front 3: Services</div>
+            <div class="flip-card-back">Back 3: Details</div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">Front 4: Contact</div>
+            <div class="flip-card-back">Back 4: Email Us</div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
